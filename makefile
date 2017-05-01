@@ -1,9 +1,15 @@
 main:
-	g++ -o read_image read_image.c
+	gcc -o read_image read_image.c
+	gcc -o bmp bmp.c
 
 run:
-	g++ read_image.c -o read_image
+	gcc read_image.c -o read_image
 	./read_image
+
+bmp:
+	gcc -o bmp bmp.c
+	./bmp
+
 
 clean:
 	rm read_image

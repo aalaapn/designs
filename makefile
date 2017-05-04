@@ -1,6 +1,6 @@
 main:
-	gcc -o read_image read_image.c
-	gcc bmp.c stb_image.h -o bmp
+	c++ `Magick++-config --cxxflags --cppflags` -O2 -o read_image read_image.c
+	gcc bmp.c -o bmp
 
 run:
 	gcc read_image.c -o read_image

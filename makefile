@@ -1,6 +1,5 @@
 main:
-	c++ `Magick++-config --cxxflags --cppflags` -O2 -o read_image read_image.c
-	gcc bmp.c -o bmp
+	g++ -std=c++11  demo.cpp -o demo
 
 run:
 	gcc read_image.c -o read_image
